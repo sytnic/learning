@@ -1,0 +1,37 @@
+## Running Python on the command line on Windows
+
+После установки Python c оф сайта, Пуск - запуск Python.  
+Открывается собственный терминал Python Shell.
+
+    2 + 2    
+    // 4
+    exit()
+    // выход
+
+Запуск Python из CMD.
+
+    cd /d E:/
+    cd MyFolder
+    dir
+    python 01_03.py // для выполнения кода Python
+
+
+
+## Running Python in an IDE
+
+Правой кнопкой на тексте с файлом и выбрать
+
+    Run Python File in Terminal
+
+или для отдельной строки или выделенного текста
+
+    Run Selection/Line in Python Terminal
+
+Так будет вызван терминал Питон. В нём можно набирать и собственные команды. Например, 2 * 4.
+
+    exit()
+    // выход из Питон терминала
+
+## 
+
+
