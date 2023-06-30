@@ -184,7 +184,121 @@ volumes:
   kineteco: 
 ```
 
-##
+## 013-Named subsets of services
 
+Профили. Профили предназначены для взаимосвязанного запуска контейнеров в условиях, когда несколько других взаимосвязанных контейнеров не подлежат запуску совсем.  
+Для этого указываются профили и задаётся нужная команда. 
+```
+version: "3.9"
 
+services:
+  scheduler:    
+    ...
+    depends_on:
+      - database
+    profiles:
+      - scheduling_services
+  storefront:
+    ...
+    depends_on:
+      - database
+    profiles:
+      - storefront_services
+  database: 
+    ...
+```
+В этом случае запустится и database с указанным профилем. Либо database можно было так же добавить в профиль для запуска с соответствующим профилем:
 
+    database:
+      profiles:
+        - storefront_services 
+        - scheduling_services
+            
+
+Запуск командой:  
+
+    docker-compose --profile storefront_services up
+
+Могут быть так же запущены 
+   
+    ...down 
+    ...stop
+    ...restart
+
+## 014-Multiple compose files
+
+Можно создать дополнительные файлы docker-compose для переопределения или дополнения настроек запуска, используемых в основном файле по умолчанию.  
+Команда, требуемая для запуска таких файлов:  
+
+    # -f or --file
+    # [command] - up, stop, etc.
+
+    docker-compose -f [primary_file] -f [override_file] [command]
+
+Например,
+
+    docker-compose -f docker-compose.yaml -f docker-compose.local.yaml up
+
+## 015-Environment variables
+
+В docker-compose можно передать переменные, для удобства частой смены тех или иных настроек. Переменная может быть задана в среде хост-машины (главной машины) (она никогда не переопределяется другими другими способами), ин-лайн в docker-compose.yml, во внешнем файле (например, .env), или по требованию (чтоб переменная не была пустой). Если она передана, но нигде не указана, будет автоматически воспринята как пустая строка.
+
+Инлайн
+```
+version: "3.9"
+
+services:
+  scheduler:
+    ...
+  storefront: 
+    ...
+  database: 
+    image: "mysql:-latest"
+    ...
+volumes:
+  kineteco:
+
+```
+
+env file
+
+```
+version: "3.9"
+
+services:
+  scheduler:
+    ...
+  storefront: 
+    ...
+  database: 
+    image: "mysql:${TAG}"
+    ...
+volumes:
+  kineteco:
+```
+env:
+
+    TAG=latest
+
+Запуск env-файла за пределами папки проекта
+
+    docker-compose --env-file [path] [up, down, stop, restart]
+
+Вариант с требованием переменной (на это указывает вопросительный знак) и сообщением об ошибке (после вопросительного знака):
+
+```
+version: "3.9"
+
+services:
+  scheduler:
+    ...
+  storefront: 
+    ...
+  database: 
+    image: "mysql:?oops TAG is requred"
+    ...
+volumes:
+  kineteco:
+```
+
+----
