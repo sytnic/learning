@@ -1,0 +1,1 @@
+https://github.com/sytnic/laravellynda/commits/master

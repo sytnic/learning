@@ -12,16 +12,24 @@ DB_DATABASE=/Users/justin/Documents/community-poll/database.sqlite
 DB_USERNAME=homestead
 DB_PASSWORD=secret
 ```
-После копирования в соответствующие директории файлов Фактори, Сидер и Миграции выполнить команды для наполнения базы данных:
+
+Создание таблиц из файлов миграции:
 
     php artisan migrate
     or
     php artisan migrate:fresh --seed
+
+Если миграции менялись:
+
     php artisan migrate:refresh
+
+Создание моделей:
 
     php artisan make:model Poll
     php artisan make:model Question
     php artisan make:model Answer
+
+Заполнение таблиц:
 
     php artisan db:seed
 
