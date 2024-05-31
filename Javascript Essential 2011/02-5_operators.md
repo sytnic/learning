@@ -49,7 +49,7 @@ LOGICAL AND/OR
 MODULUS
 
     var year = 2003;
-    var remainder = year% 4; // remainder is 3
+    var remainder = year % 4; // remainder is 3
 
 Prefix / Postfix
 
@@ -59,7 +59,7 @@ Prefix / Postfix
 
     alert(a++); // output 5, a == 6
  
-  code for console, F12:
+  code For console, F12:
 
     var a = 5;
     alert(++a); // output 6, a == 6
@@ -93,3 +93,13 @@ TERNARY OPERATOR EXAMPLE
 
     var highScore = (playerOne > playerTwo) ? playerOne : playerTwo;
 
+For console, F12:
+
+    var a = 5;
+    var b = "5";
+
+    if ( a == b ) {
+        alert("Yes, they're equal");
+    } else {
+        alert("They are NOT equal");
+    }
