@@ -72,7 +72,7 @@ https://www.freepbx.org/downloads/
 
 ## 020-Tracing a Real Phone Call and Reviewing Wireshark
 
-Запуск и захват пакетов в файл дампа Wireshark из корня
+Запуск и захват пакетов в файл дампа Wireshark из корня ОС
 
 
     cd /
@@ -80,8 +80,38 @@ https://www.freepbx.org/downloads/
 
 С помощью программы WinSCP можно подключиться и скачать в Windows получившийся файл дампа.
 
-В дампе выполнить фильтрацию по sip.  
-Также  можно зайти в пункт меню Телефония - Потоки SIP.  
+В дампе нужно выполнить фильтрацию по sip.  
+Также можно зайти в пункт меню Телефония - Потоки SIP.  
 
-## 
+## 027-Troubleshooting Bad Call Quality
   
+Чтобы улучшить качество звонков  
+на стороне сервера:  
+
+- использовать лучшие кодеки
+- сжимать заголовки
+- передача пакетов звука долдна быть приоритетней, чем передача или скачивание файлов по сети
+- можно пометить пакет и проследить его путь от точки А к точке Б
+
+## 028-The SIP RFCs
+
+Документы RFC
+
+SIP RFC 3261
+
+https://www.ietf.org/rfc/
+https://www.ietf.org/rfc/rfc3261.html
+
+https://wiki.dieg.info/sip
+https://wiki.dieg.info/rfc
+
+DTMF RFC 2833
+
+https://www.ietf.org/rfc/rfc2833.html
+
+Early Vedia RFC 3960
+
+https://www.ietf.org/rfc/rfc23960.html
+
+---
+
