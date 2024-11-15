@@ -21,6 +21,7 @@
 
 ## 2_02. Чем проще - тем безопаснее
 
+--  
 Simple is More Secure
 
 - Complexity invites bugs.
@@ -37,6 +38,7 @@ Write code comments
 - Разбивайте длинные участки кода на небольшие функции
 - Не повторяйтесь
 
+--  
 Simple is More Secure
 
 - Legacy code is a security concern

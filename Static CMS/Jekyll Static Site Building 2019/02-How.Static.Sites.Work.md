@@ -34,7 +34,8 @@
 
 Больше вариантов на:  
 
-StaticGen.com
+https://staticgen.com  ->  
+https://jamstack.org/generators/
 
 Темы, шаблоны и язык контента в статических сайтах могут писаться на разных языках.
 
