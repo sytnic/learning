@@ -19,8 +19,14 @@ https://jigsaw-blog-staging.tighten.co/
 Шаблоны:  
 https://builtwithjigsaw.com/
 
-Statamic
+Statamic  
 https://statamic.com/
 
-## 04
+## 004-Installing Jigsaw
+
+Needs:  
+
+- PHP 7.3 and >  
+- Composer  
+- Node and npm
 
