@@ -1,0 +1,31 @@
+Исправления для
+файла world.sql
+на язык MySQL
+
+строка 4376
+
+
+Должно быть
+
+CREATE TABLE CountryLanguage (
+  CountryCode TEXT NOT NULL DEFAULT '',
+  Language TEXT NOT NULL DEFAULT '',
+  IsOfficial INTEGER NOT NULL DEFAULT '0',
+  Percentage FLOAT NOT NULL default '0.0'
+  );
+  
+вместо
+
+CREATE TABLE CountryLanguage (
+  CountryCode TEXT NOT NULL DEFAULT '',
+  Language TEXT NOT NULL DEFAULT '',
+  IsOfficial INTEGER NOT NULL DEFAULT '0',
+  Percentage NUMBER NOT NULL default '0.0',
+  PRIMARY KEY  (CountryCode,Language)
+);  
+
+Столбцам CountryCode и Language язык автоматически назначает первичные ключи.
+Строки с неправильной кодировкой в базу не добавляются.
+
+Там, где указано TEXT - в базу добавляется Ptimary Key автоматически,
+к INTEGER - только если будет написано "INTEGER PRIMARY KEY,". 

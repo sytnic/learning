@@ -161,7 +161,13 @@ https://codepen.io/christinatruong/pen/OJBbdLw/
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/background
 
-## 
+## 027-Pseudo classes and pseudo elements
+
+https://codepen.io/christinatruong/pen/jOeyPPR
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/:active
+
+##  
 
 
 

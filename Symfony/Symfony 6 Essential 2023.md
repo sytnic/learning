@@ -87,3 +87,7 @@ https://www.mamp.info/en/windows/
 https://symfony.com/doc/current/configuration.html
 
 ## 12
+
+---
+
+Приостановлено вследствие погружения в глубокие детали вместо объяснения азов.

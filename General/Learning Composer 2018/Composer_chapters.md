@@ -159,4 +159,14 @@ https://packagist.org/packages/monolog/monolog
 
     /vendor/
 
-## 
+## 04_02-Set up a project already using Composer
+
+Установка проекта из папки, где нет папки vendor, но есть файл composer.lock или composer.json
+
+    composer install
+
+## 04_03-What packages should you trust
+
+<img src="img/mortens_approach.jpg" alt="drawing" width="600"/>
+
+---
