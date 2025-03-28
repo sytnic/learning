@@ -59,4 +59,16 @@ https://wordpress.org/plugins/
 
 https://www.hubspot.com/
 
-##
+Точные до пикселя темы:  
+
+- Elementor
+- Divi
+
+Известные ресурсы тем:  
+
+- Elegant Themes
+- WooCommerce Themes
+- Template Monster
+
+
+
