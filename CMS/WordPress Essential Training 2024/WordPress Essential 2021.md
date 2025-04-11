@@ -70,5 +70,21 @@ https://www.hubspot.com/
 - WooCommerce Themes
 - Template Monster
 
+## 8. Media Library
+
+Оптимизация изображений
+
+Smush  
+https://wordpress.org/plugins/wp-smushit/
+
+Поддержка SVG  
+https://wordpress.org/plugins/svg-support/
+
+## 9. WordPress Maintenance
+
+Полезный плагин:
+
+> Health Check & Troubleshooting
+
 
 
