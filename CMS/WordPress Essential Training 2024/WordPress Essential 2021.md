@@ -84,7 +84,15 @@ https://wordpress.org/plugins/svg-support/
 
 Полезный плагин:
 
-> Health Check & Troubleshooting
+- Health Check & Troubleshooting
+
+Плагин для создания бэкапов:
+
+- Updraft Plus
+
+Плагин для отслеживания спама в комментариях:
+
+- Akismet Anti-Spam
 
 
 
