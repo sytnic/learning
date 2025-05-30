@@ -8,7 +8,7 @@ https://ru.wordpress.org/plugins/really-simple-ssl/
 
 Building a secure WordPress website
 
-### 12 Secure Plugins
+### 12. Secure Plugins
 
 WP 2FA
 
@@ -26,7 +26,7 @@ Sucuri Security
 
 UpdraftPlus
 
-### 13 Secure code
+### 13. Secure code
 
 <img src="img/code-snippets.jpg" alt="drawing" width="600"/>
 
@@ -93,6 +93,21 @@ https://wordpress.org/plugins/svg-support/
 Плагин для отслеживания спама в комментариях:
 
 - Akismet Anti-Spam
+
+Для оптимизации БД плагин:
+
+- Breeze (by Cloudways)
+
+Проверка скорости загрузки сайта:
+
+- PageSpeed Insights
+- pingdom.com - Недоступен
+
+Проверка неработающих ссылок, есть плагин:
+
+- Broken Link Checker
+
+---
 
 
 
