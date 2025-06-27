@@ -11,6 +11,8 @@ https://meettheipsums.com/
 Photos  
 https://unsplash.com/  
 
+https://picsum.photos/ - прямые ссылки на фото, но не работает в РФ
+
 Icons  
 https://www.iconfinder.com/
 
