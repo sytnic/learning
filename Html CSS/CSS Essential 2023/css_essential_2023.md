@@ -419,4 +419,58 @@ ul {
 }
 ```
 
+## 059-The explicit grid
+
+Creating a grid
+
+```css
+.grid-container {
+    display: grid;
+    grid-template-columns: 25% 50% 25%; /* Three columns */ 
+    grid-template-rows: 100px 100px; /* Two rows */
+}
+```
+
+fr and repeat()
+
+```css
+/* Syntax*/
+repeat(number of tracks, size of trcks)
+
+grid-template-columns: 1fr 1fr 1fr;
+/* Same as */
+grid-template-columns: repeat(3, 1fr);
+
+/* первый столбец займёт 50 px, остальные 2 займут поровну пространство*/
+grid-template-columns: 50px repeat(2, 1fr);
+
+```
+
+Пример для тренировки:  
+05_10/05_11 The explicit and implicit grid  
+https://codepen.io/christinatruong/pen/RwYqGGa  
+
+## 060-The implicit grid
+
+Если заранее не известно точное количество строк и столбцов в сетке, следует использовать свойства, создающие неявную (возможную) сетку:  
+
+    grid-auto-rows
+    grid-auto-columns
+
+Пример
+
+```css
+.grid-container {
+  border: 4px solid black;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 200px;
+
+  /* все будущие строки займут по 100px в высоту*/
+  grid-auto-rows: 100px;
+}
+```
+
 ## 
+
+

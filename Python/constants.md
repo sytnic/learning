@@ -17,6 +17,7 @@
 * PI = 3.14
 
    — объявление константы PI.
+  
 * GRAVITY = 9.8
 
    — объявление константы GRAVITY.
@@ -51,3 +52,31 @@
 
 * Предотвратить переназначение — использование заглавных букв не предотвращает переназначение значений констант.
 
+
+---
+
+## Использование модулей для констант
+
+Хорошей практикой является определение всех констант в отдельном модуле, например constants.py:
+
+```py
+    # constants.py
+    DATABASE_URL = "postgresql://user:password@localhost/db"
+    MAX_USERS = 1000
+    DEBUG_MODE = False
+```
+
+Затем эти константы можно импортировать в другие модули:
+
+```py
+    # В других файлах
+    from constants import DATABASE_URL, MAX_USERS
+    
+    # Использование
+    if user_count > MAX_USERS:
+        print("Превышено максимальное количество пользователей")
+```
+
+Подробнее: https://www.securitylab.ru/blog/personal/SimlpeHacker/355470.php?ysclid=mjjp1wqp8883025888
+
+---
