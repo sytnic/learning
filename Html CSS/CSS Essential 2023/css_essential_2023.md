@@ -471,6 +471,82 @@ https://codepen.io/christinatruong/pen/RwYqGGa
 }
 ```
 
+## 061-Adding gutters with the gap property
+
+Создание желобка между строками и колонками
+
+    gap: 10px;
+
+Создание желобка между строками 10px и колонками 30px (shorthand)
+
+    gap: 10px 30px;
+
+Также есть подробное (longhand) выражение
+
+    row-gap: 10px;
+    column-gap: 20px;
+
+## 064-Changing fonts with font family
+
+Статистика предустановленных шрифтов на операционных системах - так называемые Web Safe Fonts:
+
+https://www.cssfontstack.com/
+
+Распространённые наборы шрифтов - Modern Font Stacks:
+
+https://github.com/system-fonts/modern-font-stacks
+
+## 065-Font weight and font style
+
+Жирность шрифта. Не все варианты могут использоваться в конкретном шрифте.  
+
+```css
+font-weight: 100; /* Lightest or thinnest */
+font-weight: 200; /* Extra light or ultra light */
+font-weight: 300; /* Light or book */
+font-weight: 400; /* Normal or regular */
+font-weight: 500; /* Medium */
+font-weight: 600; /* Semi bold or demi bold */
+font-weight: 700; /* Bold */
+font-weight: 800; /* Extra bold or Ultra bold */
+font-weight: 900; /* Darkest or thickest */
+```
+
+Стиль шрифта
+
+```css
+font-style: italic;  /* Курсив */
+font-style: oblique; /* Наклон */
+font-style: normal;  /* Стандарт */
+```
+
+## 066-Web fonts with font face
+
+Как загружаются с сайтом веб-шрифты
+
+```css
+/* Объявление */
+@font-face {
+    font-family: "My Font";
+    src:  url("my-font.woff2") format("woff2"),
+          url("my-font.woff") format("woff");
+}
+
+/* Использование */
+body {
+    font-family: "My Font", Helvetica, Arial, sans-serif;
+}
+```
+
+Для старых браузеров и мобильных приложений могут понадобиться не только объявления `woff`. Их можно сгенерировать онлайн:  
+
+https://www.fontsquirrel.com/tools/webfont-generator
+
+## 067-Web fonts with Google Fonts
+
+https://fonts.google.com/
+
 ## 
+
 
 
